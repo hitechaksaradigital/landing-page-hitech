@@ -21,6 +21,12 @@ body {
   background: radial-gradient(circle at top right, #edf4ff 0%, #f7f9ff 100%);
 }
 
+.input-focus-glow:focus {
+  outline: none;
+  border-color: #328CC1;
+  box-shadow: 0 0 0 2px rgba(50, 140, 193, 0.2);
+}
+
 .bento-grid {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
