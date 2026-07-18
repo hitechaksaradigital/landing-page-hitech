@@ -1,4 +1,5 @@
 import { useEffect } from 'react'
+import { NavLink } from 'react-router-dom'
 
 export default function Navbar() {
   useEffect(() => {
@@ -28,12 +29,24 @@ export default function Navbar() {
         </span>
       </div>
       <div className="hidden md:flex items-center gap-lg">
-        <a className="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md" href="#">Home</a>
-        <a className="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md" href="#">About Us</a>
-        <a className="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md" href="#">Services</a>
-        <a className="text-secondary font-bold border-b-2 border-secondary pb-1 text-label-md" href="#">Portfolio</a>
-        <a className="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md" href="#">Contact Us</a>
-        <a className="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md" href="#">Blog</a>
+        <NavLink to="/" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-secondary'}`}>
+          Home
+        </NavLink>
+        <NavLink to="/about" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-secondary'}`}>
+          About Us
+        </NavLink>
+        <NavLink to="/services" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-secondary'}`}>
+          Services
+        </NavLink>
+        <NavLink to="/portfolio" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-secondary'}`}>
+          Portfolio
+        </NavLink>
+        <NavLink to="/blog" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-secondary'}`}>
+          Blog
+        </NavLink>
+        <NavLink to="/contact" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant hover:text-secondary'}`}>
+          Contact Us
+        </NavLink>
       </div>
       <div className="flex items-center gap-md">
         <span className="text-label-md font-label-md text-on-surface-variant cursor-pointer">EN/ID</span>

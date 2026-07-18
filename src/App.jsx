@@ -1,21 +1,14 @@
-import Navbar from './components/Navbar'
-import Hero from './components/Hero'
-import ClientLogoCloud from './components/ClientLogoCloud'
-import CaseStudyGallery from './components/CaseStudyGallery'
-import Testimonial from './components/Testimonial'
-import SuccessMetrics from './components/SuccessMetrics'
-import Footer from './components/Footer'
+import { HashRouter, Routes, Route } from 'react-router-dom'
+import Home from './components/Home'
+import Portfolio from './components/Portfolio'
 
 export default function App() {
   return (
-    <div className="text-on-surface">
-      <Navbar />
-      <Hero />
-      <ClientLogoCloud />
-      <CaseStudyGallery />
-      <Testimonial />
-      <SuccessMetrics />
-      <Footer />
-    </div>
+    <HashRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/portfolio" element={<Portfolio />} />
+      </Routes>
+    </HashRouter>
   )
 }

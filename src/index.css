@@ -20,3 +20,9 @@ body {
 .hero-gradient {
   background: radial-gradient(circle at top right, #edf4ff 0%, #f7f9ff 100%);
 }
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 24px;
+}
