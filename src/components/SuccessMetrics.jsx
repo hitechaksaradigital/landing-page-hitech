@@ -25,16 +25,16 @@ export default function SuccessMetrics() {
 
   if (loading) {
     return (
-      <section className="py-xl px-margin-desktop bg-surface">
+      <section className="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
         <div className="max-w-7xl mx-auto text-center">
-          <p className="text-on-surface-variant">Loading metrics...</p>
+          <p className="text-on-surface-variant">Memuat metrik...</p>
         </div>
       </section>
     )
   }
 
   return (
-    <section className="py-xl px-margin-desktop bg-surface">
+    <section className="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
       <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-lg text-center">
         {metrics.map((metric) => (
           <div key={metric.id} className="space-y-xs">

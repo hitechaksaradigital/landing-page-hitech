@@ -25,10 +25,10 @@ export default function CaseStudyGallery() {
 
   if (loading) {
     return (
-      <section className="py-xl px-margin-desktop bg-background">
+      <section className="py-xl px-margin-mobile md:px-margin-desktop bg-background">
         <div className="max-w-7xl mx-auto">
-          <h2 className="text-headline-lg font-headline-lg text-primary mb-2">Featured Case Studies</h2>
-          <p className="text-body-md text-on-surface-variant">Loading projects...</p>
+          <h2 className="text-headline-lg font-headline-lg text-primary mb-2">Studi Kasus Unggulan</h2>
+          <p className="text-body-md text-on-surface-variant">Memuat proyek...</p>
         </div>
       </section>
     )
@@ -39,13 +39,13 @@ export default function CaseStudyGallery() {
   const bottomProjects = restProjects.slice(2)
 
   return (
-    <section className="py-xl px-margin-desktop bg-background">
+    <section className="py-xl px-margin-mobile md:px-margin-desktop bg-background">
       <div className="max-w-7xl mx-auto">
         <div className="flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
           <div>
-            <h2 className="text-headline-lg font-headline-lg text-primary mb-2">Featured Case Studies</h2>
+            <h2 className="text-headline-lg font-headline-lg text-primary mb-2">Studi Kasus Unggulan</h2>
             <p className="text-body-md text-on-surface-variant max-w-xl">
-              A curated selection of our most impactful digital transformations across finance, logistics, and manufacturing sectors.
+              Pilihan transformasi digital berdampak tinggi kami di sektor keuangan, logistik, dan manufaktur.
             </p>
           </div>
           <div className="flex gap-base">
@@ -63,7 +63,7 @@ export default function CaseStudyGallery() {
           {/* Main Featured Project */}
           {mainProject && (
             <div className="md:col-span-8 group relative overflow-hidden rounded-xl bg-white border border-outline-variant flex flex-col transition-all hover:shadow-2xl">
-              <div className="relative h-[400px] overflow-hidden">
+              <div className="relative h-[300px] md:h-[400px] overflow-hidden">
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent z-10"></div>
                 {mainProject.image_url && (
                   <div
@@ -78,7 +78,7 @@ export default function CaseStudyGallery() {
                   <h3 className="text-headline-lg font-headline-lg mb-sm">{mainProject.title}</h3>
                   <p className="text-body-md opacity-90 max-w-lg mb-md">{mainProject.description}</p>
                   <button className="bg-on-primary text-primary px-lg py-3 rounded-lg font-label-md flex items-center gap-2 hover:bg-secondary-fixed transition-all">
-                    View Case Study
+                    Lihat Studi Kasus
                     <span className="material-symbols-outlined text-[18px]">open_in_new</span>
                   </button>
                 </div>
@@ -127,13 +127,13 @@ export default function CaseStudyGallery() {
                     )}
                     {idx === 0 && (
                       <button className="text-primary font-bold flex items-center gap-1 hover:text-secondary transition-colors">
-                        Details
+                        Detail
                         <span className="material-symbols-outlined text-[16px]">arrow_forward</span>
                       </button>
                     )}
                     {idx === 1 && (
                       <button className="bg-secondary-container text-on-secondary-container px-md py-2 rounded font-label-md text-label-sm hover:bg-white transition-all">
-                        Learn More
+                        Pelajari Lebih Lanjut
                       </button>
                     )}
                   </div>
@@ -163,7 +163,7 @@ export default function CaseStudyGallery() {
                 <h4 className="text-headline-md font-headline-md text-primary mb-2">{project.title}</h4>
                 <p className="text-body-md text-on-surface-variant mb-md">{project.description}</p>
                 <button className="w-full py-3 rounded border border-primary text-primary font-label-md hover:bg-primary hover:text-on-primary transition-all">
-                  View Case Study
+                  Lihat Studi Kasus
                 </button>
               </div>
             </div>
@@ -174,12 +174,12 @@ export default function CaseStudyGallery() {
             <div className="w-16 h-16 rounded-full bg-primary/10 flex items-center justify-center text-primary mb-md">
               <span className="material-symbols-outlined text-[32px]">rocket_launch</span>
             </div>
-            <h4 className="text-headline-md font-headline-md text-primary mb-sm">Have a vision?</h4>
+            <h4 className="text-headline-md font-headline-md text-primary mb-sm">Punya visi?</h4>
             <p className="text-body-md text-on-surface-variant mb-lg">
-              We turn complex requirements into high-performance digital reality.
+              Kami mengubah kebutuhan kompleks menjadi realitas digital berperforma tinggi.
             </p>
             <button className="bg-primary text-on-primary px-lg py-3 rounded-lg font-label-md w-full hover:bg-secondary transition-all">
-              Start Your Project
+              Mulai Proyek Anda
             </button>
           </div>
         </div>

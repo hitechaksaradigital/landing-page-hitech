@@ -28,7 +28,7 @@ export default function Home() {
   return (
     <div className="text-on-surface">
       {/* TopNavBar */}
-      <nav className="sticky top-0 z-50 flex justify-between items-center w-full px-margin-desktop py-4 bg-surface dark:bg-primary shadow-sm border-b border-outline-variant dark:border-primary-container">
+      <nav className="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 bg-surface dark:bg-primary shadow-sm border-b border-outline-variant dark:border-primary-container">
         <div className="flex items-center gap-base">
           <span className="text-headline-md font-headline-md font-bold text-primary dark:text-secondary-fixed">
             PT. Hitech Aksara Digital
@@ -36,22 +36,22 @@ export default function Home() {
         </div>
         <div className="hidden lg:flex items-center gap-lg">
           <NavLink to="/" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed'}`}>
-            Home
+            Beranda
           </NavLink>
           <NavLink to="/about" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed'}`}>
-            About Us
+            Tentang Kami
           </NavLink>
           <NavLink to="/services" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed'}`}>
-            Services
+            Layanan
           </NavLink>
           <NavLink to="/portfolio" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed'}`}>
-            Portfolio
+            Portofolio
           </NavLink>
           <NavLink to="/blog" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed'}`}>
             Blog
           </NavLink>
           <NavLink to="/contact" className={({ isActive }) => `text-label-md font-medium transition-colors duration-200 ${isActive ? 'text-secondary font-bold border-b-2 border-secondary pb-1' : 'text-on-surface-variant dark:text-surface-variant hover:text-secondary dark:hover:text-secondary-fixed'}`}>
-            Contact Us
+            Hubungi Kami
           </NavLink>
         </div>
         <div className="flex items-center gap-md">
@@ -60,24 +60,23 @@ export default function Home() {
             EN/ID
           </button>
           <button className="bg-primary text-on-primary px-lg py-2 rounded-lg font-label-md hover:bg-secondary transition-colors">
-            Careers
+            Karir
           </button>
         </div>
       </nav>
 
       {/* Hero Section */}
-      <header className="relative min-h-[85vh] flex items-center overflow-hidden bg-primary text-on-primary px-margin-desktop">
-        <div className="relative z-10 max-w-4xl">
+      <header className="relative min-h-[70vh] md:min-h-[85vh] flex items-center overflow-hidden bg-primary text-on-primary px-margin-mobile md:px-margin-desktop">
+        <div className="relative z-10 max-w-4xl w-full">
           <div className="inline-block px-4 py-1 rounded-full bg-secondary-container/20 border border-secondary-container/30 text-secondary-container mb-md font-label-sm uppercase tracking-widest">
-            Digital Evolution Experts
+            Ahli Evolusi Digital
           </div>
-          <h1 className="font-headline-xl text-headline-xl mb-md leading-tight">
-            Accelerating Digital <br />
-            <span className="text-secondary-container">Transformation</span> <br />
-            with Precision
+          <h1 className="font-headline-xl text-headline-lg-mobile md:text-headline-xl mb-md leading-tight">
+            Mempercepat Transformasi Digital <br />
+            <span className="text-secondary-container">dengan Presisi</span>
           </h1>
-          <p className="font-body-lg text-body-lg text-on-primary-container max-w-2xl mb-lg">
-            Empowering Indonesian industries through bespoke software engineering, enterprise-grade cloud solutions, and strategic data governance. We translate complex business needs into seamless digital experiences.
+          <p className="font-body-lg text-body-md md:text-body-lg text-on-primary-container max-w-2xl mb-lg">
+            Memberdayakan industri Indonesia melalui rekayasa perangkat lunak khusus, solusi cloud bertaraf perusahaan, dan tata kelola data strategis. Kami menerjemahkan kebutuhan bisnis yang kompleks menjadi pengalaman digital yang mulus.
           </p>
           <div className="flex flex-wrap gap-md">
             <Link to="/contact" className="bg-secondary-container text-on-secondary-container font-label-md text-headline-md px-lg py-4 rounded-lg hover:scale-105 transition-transform inline-flex items-center gap-sm">
@@ -85,16 +84,16 @@ export default function Home() {
               <span className="material-symbols-outlined">arrow_forward</span>
             </Link>
             <Link to="/services" className="border border-outline-variant/30 text-on-primary font-label-md px-lg py-4 rounded-lg hover:bg-white/10 transition-colors inline-block text-center">
-              Our Expertise
+              Keahlian Kami
             </Link>
           </div>
         </div>
       </header>
 
       {/* Summary Section */}
-      <section className="py-xl px-margin-desktop bg-surface-container-lowest">
+      <section className="py-xl px-margin-mobile md:px-margin-desktop bg-surface-container-lowest">
         <div className="grid md:grid-cols-2 gap-xl items-center">
-          <div className="relative h-[500px] rounded-xl overflow-hidden shadow-2xl">
+          <div className="relative h-[300px] md:h-[500px] rounded-xl overflow-hidden shadow-2xl">
             <div
               className="w-full h-full bg-cover bg-center"
               data-alt="A sophisticated professional business environment showcasing high-tech hardware and clean glass office walls. The lighting is bright and airy with a cool blue corporate tone. A large digital screen displays complex network architecture in the background. The mood is clinical, precise, and highly innovative, reflecting corporate modern stability."
@@ -103,7 +102,7 @@ export default function Home() {
             <div className="absolute bottom-md left-md right-md glass-card p-md rounded-lg">
               <div className="flex items-center gap-sm mb-xs">
                 <span className="text-primary font-bold text-headline-md">10+</span>
-                <span className="text-on-surface-variant font-label-sm">Years of Industry Excellence</span>
+                <span className="text-on-surface-variant font-label-sm">Tahun Keunggulan Industri</span>
               </div>
               <div className="w-full bg-outline-variant h-1 rounded-full overflow-hidden">
                 <div className="bg-primary w-3/4 h-full"></div>
@@ -111,25 +110,25 @@ export default function Home() {
             </div>
           </div>
           <div>
-            <h2 className="font-headline-lg text-headline-lg text-primary mb-md">Precision-Engineered Solutions for Modern Enterprises</h2>
+            <h2 className="font-headline-lg text-headline-lg text-primary mb-md">Solusi Berbasis Presisi untuk Perusahaan Modern</h2>
             <p className="font-body-md text-body-md text-on-surface-variant mb-md leading-relaxed">
-              At PT. Hitech Aksara Digital, we don't just build software; we architect the future of your business. Our methodology combines rigorous engineering standards with an agile mindset to deliver scalable, secure, and sustainable digital assets.
+              Di PT. Hitech Aksara Digital, kami tidak hanya membangun perangkat lunak; kami merancang masa depan bisnis Anda. Metodologi kami menggabungkan standar rekayasa yang ketat dengan pola pikir agile untuk menghasilkan aset digital yang skalabel, aman, dan berkelanjutan.
             </p>
             <p className="font-body-md text-body-md text-on-surface-variant mb-lg leading-relaxed">
-              Headquartered in Jakarta, we serve as a strategic technology partner for conglomerates and high-growth startups alike, ensuring that every line of code serves a measurable business objective.
+              Berpusat di Jakarta, kami berperan sebagai mitra teknologi strategis bagi konglomerat dan startup berpertumbuhan tinggi, memastikan setiap baris kode melayani tujuan bisnis yang terukur.
             </p>
-            <div className="grid grid-cols-2 gap-md">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-md">
               <div className="flex items-center gap-sm">
                 <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
                   <span className="material-symbols-outlined">verified</span>
                 </div>
-                <span className="font-label-md">ISO 27001 Certified</span>
+                <span className="font-label-md">Sertifikat ISO 27001</span>
               </div>
               <div className="flex items-center gap-sm">
                 <div className="w-10 h-10 rounded-full bg-surface-container flex items-center justify-center text-primary">
                   <span className="material-symbols-outlined">cloud_done</span>
                 </div>
-                <span className="font-label-md">Cloud-Native Architectures</span>
+                <span className="font-label-md">Arsitektur Cloud-Native</span>
               </div>
             </div>
           </div>
@@ -137,24 +136,24 @@ export default function Home() {
       </section>
 
       {/* Features Section (Bento Grid) */}
-      <section className="py-xl px-margin-desktop bg-background">
+      <section className="py-xl px-margin-mobile md:px-margin-desktop bg-background">
         <div className="text-center mb-xl max-w-3xl mx-auto">
-          <h2 className="font-headline-lg text-headline-lg text-primary mb-sm">Core Technology Solutions</h2>
-          <p className="text-on-surface-variant">Our multidisciplinary teams specialize in high-impact technological domains designed to provide a competitive edge.</p>
+          <h2 className="font-headline-lg text-headline-lg text-primary mb-sm">Solusi Teknologi Inti</h2>
+          <p className="text-on-surface-variant">Tim multidisiplin kami mengkhususkan diri di bidang teknologi berdampak tinggi yang dirancang untuk memberikan keunggulan kompetitif.</p>
         </div>
         <div className="bento-grid">
           {/* Feature 1: Enterprise App Dev */}
           <div className="col-span-12 md:col-span-8 bg-white p-lg rounded-xl border border-outline-variant hover:shadow-lg transition-all group overflow-hidden relative">
             <div className="relative z-10">
               <span className="material-symbols-outlined text-[48px] text-primary mb-md" style={{ fontVariationSettings: "'FILL' 1" }}>developer_mode_tv</span>
-              <h3 className="font-headline-md text-headline-md mb-sm">Enterprise Software Development</h3>
-              <p className="text-on-surface-variant max-w-lg mb-md">Custom ERP, CRM, and internal management tools built with modern stacks (React, Go, Python) for maximum performance and security.</p>
+              <h3 className="font-headline-md text-headline-md mb-sm">Pengembangan Perangkat Lunak Perusahaan</h3>
+              <p className="text-on-surface-variant max-w-lg mb-md">ERP, CRM, dan alat manajemen internal khusus yang dibangun dengan tumpukan modern (React, Go, Python) untuk performa dan keamanan maksimal.</p>
               <ul className="space-y-2 mb-md text-label-md">
                 <li className="flex items-center gap-xs">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Scalable Microservices
+                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Mikro-layanan yang Dapat Di-scale
                 </li>
                 <li className="flex items-center gap-xs">
-                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Legacy Modernization
+                  <span className="material-symbols-outlined text-secondary text-sm">check_circle</span> Modernisasi Sistem Legasi
                 </li>
               </ul>
             </div>
@@ -167,19 +166,19 @@ export default function Home() {
           <div className="col-span-12 md:col-span-4 bg-primary text-on-primary p-lg rounded-xl flex flex-col justify-between group">
             <div>
               <span className="material-symbols-outlined text-[48px] text-secondary-container mb-md">analytics</span>
-              <h3 className="font-headline-md text-headline-md mb-sm">Data &amp; Analytics</h3>
-              <p className="text-on-primary-container text-body-md">Turning raw data into actionable business intelligence using AI and ML modeling.</p>
+              <h3 className="font-headline-md text-headline-md mb-sm">Data &amp; Analitik</h3>
+              <p className="text-on-primary-container text-body-md">Mengubah data mentah menjadi intelijen bisnis yang dapat ditindakkan menggunakan AI dan pemodelan ML.</p>
             </div>
             <Link to="/services" className="mt-lg flex items-center gap-xs text-secondary-container font-label-md group-hover:gap-sm transition-all w-fit">
-              Learn more <span className="material-symbols-outlined">north_east</span>
+              Pelajari lebih lanjut <span className="material-symbols-outlined">north_east</span>
             </Link>
           </div>
 
           {/* Feature 3: Cybersecurity */}
           <div className="col-span-12 md:col-span-4 bg-secondary-container/10 border border-secondary-container/30 p-lg rounded-xl flex flex-col group">
             <span className="material-symbols-outlined text-[48px] text-secondary mb-md">shield_lock</span>
-            <h3 className="font-headline-md text-headline-md text-primary mb-sm">Cybersecurity</h3>
-            <p className="text-on-surface-variant text-body-md mb-lg">Zero-trust architecture implementation and 24/7 monitoring to protect your digital sovereignty.</p>
+            <h3 className="font-headline-md text-headline-md text-primary mb-sm">Keamanan Siber</h3>
+            <p className="text-on-surface-variant text-body-md mb-lg">Implementasi arsitektur zero-trust dan pemantauan 24/7 untuk melindungi kedaulatan digital Anda.</p>
             <div
               className="w-full h-32 rounded-lg bg-cover bg-center mt-auto"
               data-alt="A futuristic cybersecurity control center with dark blue tones and glowing neon green digital data flows. Holographic security shields and locking mechanisms are superimposed over blurred high-tech server racks. The lighting is moody and focused, emphasizing protection and advanced surveillance technology. It reflects a top-tier security infrastructure for high-level corporations."
@@ -189,12 +188,12 @@ export default function Home() {
 
           {/* Feature 4: Cloud Solutions */}
           <div className="col-span-12 md:col-span-8 bg-white p-lg rounded-xl border border-outline-variant flex flex-col md:flex-row gap-lg items-center group">
-            <div className="md:w-1/2">
+            <div className="md:w-1/2 w-full">
               <span className="material-symbols-outlined text-[48px] text-primary mb-md">cloud_sync</span>
-              <h3 className="font-headline-md text-headline-md mb-sm">Cloud Infrastructure</h3>
-              <p className="text-on-surface-variant text-body-md mb-md">Seamless migration and management for AWS, Azure, and Google Cloud environments with cost optimization focus.</p>
-              <div className="flex gap-sm">
-                <span className="px-3 py-1 bg-surface-container rounded-full text-label-sm">AWS Partner</span>
+              <h3 className="font-headline-md text-headline-md mb-sm">Infrastruktur Cloud</h3>
+              <p className="text-on-surface-variant text-body-md mb-md">Migrasi dan manajemen yang mulus untuk lingkungan AWS, Azure, dan Google Cloud dengan fokus optimasi biaya.</p>
+              <div className="flex flex-wrap gap-sm">
+                <span className="px-3 py-1 bg-surface-container rounded-full text-label-sm">Partner AWS</span>
                 <span className="px-3 py-1 bg-surface-container rounded-full text-label-sm">Azure Cloud</span>
               </div>
             </div>
@@ -222,30 +221,30 @@ export default function Home() {
       </a>
 
       {/* Footer */}
-      <footer className="w-full px-margin-desktop py-xl flex flex-col md:flex-row justify-between items-center gap-md bg-primary dark:bg-on-background">
+      <footer className="w-full px-margin-mobile md:px-margin-desktop py-xl flex flex-col md:flex-row justify-between items-center gap-md bg-primary dark:bg-on-background">
         <div className="flex flex-col items-center md:items-start gap-sm">
           <span className="text-headline-md font-headline-md text-on-primary">PT. Hitech Aksara Digital</span>
           <p className="text-on-primary-container dark:text-outline-variant text-body-md max-w-sm text-center md:text-left">
-            Your reliable partner in engineering excellence and strategic digital innovation.
+            Mitra andal Anda dalam keunggulan rekayasa dan inovasi digital strategis.
           </p>
         </div>
         <div className="flex flex-col items-center md:items-end gap-md">
           <div className="flex flex-wrap justify-center gap-md">
             <Link to="/privacy" className="text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors font-label-sm">
-              Privacy Policy
+              Kebijakan Privasi
             </Link>
             <Link to="/terms" className="text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors font-label-sm">
-              Terms of Service
+              Syarat Layanan
             </Link>
             <Link to="/faq" className="text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors font-label-sm">
               FAQ
             </Link>
             <Link to="/cookies" className="text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors font-label-sm">
-              Cookie Settings
+              Pengaturan Cookie
             </Link>
           </div>
           <div className="text-on-primary-container dark:text-outline-variant text-label-sm">
-            © 2024 PT. Hitech Aksara Digital. All Rights Reserved.
+            © 2024 PT. Hitech Aksara Digital. Hak Cipta Dilindungi.
           </div>
         </div>
       </footer>

@@ -24,15 +24,15 @@ const logos = [
 export default function ClientLogoCloud() {
   return (
     <section className="py-lg bg-surface border-y border-outline-variant/30">
-      <div className="px-margin-desktop overflow-hidden">
+      <div className="px-margin-mobile md:px-margin-desktop overflow-hidden">
         <p className="text-center text-label-md font-semibold text-outline mb-lg uppercase tracking-[0.2em]">
-          Trusted by Global Industry Leaders
+          Dipercaya oleh Pemimpin Industri Global
         </p>
         <div className="flex flex-wrap justify-center items-center gap-xl opacity-60 grayscale hover:grayscale-0 transition-all duration-700">
           {logos.map((logo, index) => (
             <img
               key={index}
-              className="h-10 md:h-12 w-auto"
+              className="h-8 md:h-10 lg:h-12 w-auto"
               data-alt={logo.alt}
               src={logo.src}
               alt={logo.alt}

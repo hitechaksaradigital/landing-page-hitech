@@ -24,20 +24,20 @@ export default function Testimonial() {
 
   if (!testimonial) {
     return (
-      <section className="py-xl px-margin-desktop bg-primary text-on-primary overflow-hidden relative">
+      <section className="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-on-primary overflow-hidden relative">
         <div className="max-w-4xl mx-auto relative z-10 text-center">
-          <p className="text-on-primary-container">Loading testimonial...</p>
+          <p className="text-on-primary-container">Memuat testimoni...</p>
         </div>
       </section>
     )
   }
 
   return (
-    <section className="py-xl px-margin-desktop bg-primary text-on-primary overflow-hidden relative">
+    <section className="py-xl px-margin-mobile md:px-margin-desktop bg-primary text-on-primary overflow-hidden relative">
       <div className="absolute right-0 top-0 w-1/2 h-full opacity-10 pointer-events-none"></div>
       <div className="max-w-4xl mx-auto relative z-10 text-center">
         <div className="flex justify-center mb-lg">
-          <span className="material-symbols-outlined text-[64px] text-secondary-container">format_quote</span>
+          <span className="material-symbols-outlined text-[48px] md:text-[64px] text-secondary-container">format_quote</span>
         </div>
         <h3 className="text-headline-lg font-headline-lg mb-lg italic font-light leading-relaxed">
           &quot;{testimonial.quote}&quot;
@@ -45,7 +45,7 @@ export default function Testimonial() {
         <div className="flex items-center justify-center gap-md">
           {testimonial.avatar_url && (
             <img
-              className="w-16 h-16 rounded-full border-2 border-secondary-container"
+              className="w-12 h-12 md:w-16 md:h-16 rounded-full border-2 border-secondary-container"
               src={testimonial.avatar_url}
               alt={testimonial.name}
             />
