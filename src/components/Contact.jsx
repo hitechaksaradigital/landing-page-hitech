@@ -1,14 +1,40 @@
 import { useState } from 'react'
+import { supabase } from '../lib/supabase'
 
 export default function Contact() {
   const [submitted, setSubmitted] = useState(false)
+  const [error, setError] = useState('')
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault()
+    setError('')
+
+    const form = e.target
+    const fullName = form.fullName.value.trim()
+    const email = form.email.value.trim()
+    const subject = form.subject.value
+    const message = form.message.value.trim()
+    const consent = form.consent.checked
+
+    if (!consent) {
+      setError('Please agree to the Privacy Policy and data processing terms.')
+      return
+    }
+
+    const { error: insertError } = await supabase
+      .from('contacts')
+      .insert([{ full_name: fullName, email, subject, message, consent }])
+
+    if (insertError) {
+      setError('Failed to send inquiry. Please try again later.')
+      return
+    }
+
     setSubmitted(true)
     setTimeout(() => {
       setSubmitted(false)
-      e.target.reset()
+      setError('')
+      form.reset()
     }, 3000)
   }
 
@@ -117,23 +143,28 @@ export default function Contact() {
                     <div className="space-y-xs">
                       <label className="text-label-md font-label-md text-primary ml-1">Full Name</label>
                       <input
+                        name="fullName"
                         className="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md"
                         placeholder="John Doe"
                         type="text"
+                        required
                       />
                     </div>
                     <div className="space-y-xs">
                       <label className="text-label-md font-label-md text-primary ml-1">Work Email</label>
                       <input
+                        name="email"
                         className="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md"
                         placeholder="john@company.com"
                         type="email"
+                        required
                       />
                     </div>
                   </div>
                   <div className="space-y-xs">
                     <label className="text-label-md font-label-md text-primary ml-1">Subject</label>
-                    <select className="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md appearance-none">
+                    <select name="subject" className="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md appearance-none" required>
+                      <option value="">Select a subject</option>
                       <option>Strategic Partnership</option>
                       <option>Service Inquiry</option>
                       <option>Technical Support</option>
@@ -144,17 +175,20 @@ export default function Contact() {
                   <div className="space-y-xs">
                     <label className="text-label-md font-label-md text-primary ml-1">Message</label>
                     <textarea
+                      name="message"
                       className="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md resize-none"
                       placeholder="Tell us about your project or inquiry..."
                       rows="6"
+                      required
                     ></textarea>
                   </div>
                   <div className="flex items-center gap-sm pt-2">
-                    <input className="rounded border-outline-variant text-secondary focus:ring-secondary" id="consent" type="checkbox" />
+                    <input className="rounded border-outline-variant text-secondary focus:ring-secondary" id="consent" name="consent" type="checkbox" required />
                     <label className="text-label-md font-label-md text-on-surface-variant" htmlFor="consent">
                       I agree to the <a className="text-secondary underline" href="#">Privacy Policy</a> and data processing terms.
                     </label>
                   </div>
+                  {error && <p className="text-red-500 text-label-md">{error}</p>}
                   <button
                     className={`w-full py-4 rounded-lg text-headline-md font-headline-md hover:bg-secondary transition-all transform hover:-translate-y-1 shadow-md ${submitted ? 'bg-green-600 text-white' : 'bg-primary text-on-primary'}`}
                     type="submit"
