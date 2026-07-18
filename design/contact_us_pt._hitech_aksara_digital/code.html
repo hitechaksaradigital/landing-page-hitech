@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact Us | PT. Hitech Aksara Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#f6bb80",
+                    "tertiary-container": "#553001",
+                    "on-secondary-fixed": "#001e2f",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#8bceff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0b3c5d",
+                    "surface-container": "#e2efff",
+                    "on-background": "#0f1d29",
+                    "outline": "#72777e",
+                    "on-surface-variant": "#42474e",
+                    "surface-variant": "#d6e4f5",
+                    "primary-fixed": "#cee5ff",
+                    "surface-tint": "#396285",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#371d00",
+                    "on-secondary-container": "#005278",
+                    "surface-bright": "#f7f9ff",
+                    "surface-dim": "#cddced",
+                    "primary": "#00263f",
+                    "inverse-primary": "#a3cbf2",
+                    "on-tertiary-fixed-variant": "#663e0e",
+                    "secondary": "#006492",
+                    "surface-container-highest": "#d6e4f5",
+                    "on-tertiary-container": "#ce9760",
+                    "background": "#f7f9ff",
+                    "inverse-surface": "#24323f",
+                    "on-primary-fixed-variant": "#1f4a6c",
+                    "on-primary-container": "#7fa7cd",
+                    "outline-variant": "#c2c7ce",
+                    "surface-container-low": "#edf4ff",
+                    "on-tertiary-fixed": "#2c1600",
+                    "on-primary-fixed": "#001d32",
+                    "on-secondary-fixed-variant": "#004b6f",
+                    "secondary-container": "#75c6ff",
+                    "primary-fixed-dim": "#a3cbf2",
+                    "secondary-fixed": "#c9e6ff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdcbd",
+                    "on-surface": "#0f1d29",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#e8f2ff",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f7f9ff",
+                    "surface-container-high": "#dbeafb",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "xl": "80px",
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+      body {
+        font-family: 'Inter', sans-serif;
+        background-color: #f7f9ff;
+        color: #0f1d29;
+      }
+      .material-symbols-outlined {
+        font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+      }
+      .glass-card {
+        background: rgba(255, 255, 255, 0.8);
+        backdrop-filter: blur(12px);
+        border: 1px solid #E2E8F0;
+      }
+      .input-focus-glow:focus {
+        outline: none;
+        border-color: #328CC1;
+        box-shadow: 0 0 0 2px rgba(50, 140, 193, 0.2);
+      }
+    </style>
+</head>
+<body class="flex flex-col min-h-screen">
+<!-- TopNavBar (Shared Component) -->
+<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-desktop py-4 bg-surface dark:bg-primary border-b border-outline-variant dark:border-primary-container shadow-sm dark:shadow-none">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-secondary-fixed">
+            PT. Hitech Aksara Digital
+        </div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-md font-label-md" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-md font-label-md" href="#">About Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-md font-label-md" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-md font-label-md" href="#">Portfolio</a>
+<a class="text-secondary dark:text-secondary-container font-bold border-b-2 border-secondary pb-1 text-label-md font-label-md" href="#">Contact Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200 text-label-md font-label-md" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-md">
+<div class="hidden lg:flex items-center gap-sm">
+<span class="text-on-surface-variant text-label-md font-label-md">EN/ID</span>
+</div>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-secondary transition-colors duration-200">
+                Careers
+            </button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative overflow-hidden bg-primary py-xl px-margin-desktop text-on-primary">
+
+<div class="relative z-10 max-w-4xl">
+<h1 class="text-headline-xl font-headline-xl mb-md">Let's Build the Future Together</h1>
+<p class="text-body-lg font-body-lg text-on-primary-container max-w-2xl">
+                    Whether you have a specific project in mind or just want to explore how our digital solutions can transform your business, our team of experts is ready to assist you.
+                </p>
+</div>
+</section>
+<!-- Contact Content -->
+<section class="px-margin-desktop py-xl">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-xl">
+<!-- Left Column: Info -->
+<div class="lg:col-span-5 flex flex-col justify-between">
+<div>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-lg">Contact Information</h2>
+<div class="space-y-lg">
+<div class="flex items-start gap-md group">
+<div class="bg-surface-container-high p-4 rounded-xl text-secondary">
+<span class="material-symbols-outlined text-[32px]">mail</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm uppercase tracking-widest text-outline mb-1">Email Us</p>
+<p class="text-headline-md font-headline-md text-primary">hello@hitechaksara.com</p>
+<p class="text-body-md font-body-md text-on-surface-variant">Our support team usually responds within 24 hours.</p>
+</div>
+</div>
+<div class="flex items-start gap-md group">
+<div class="bg-surface-container-high p-4 rounded-xl text-secondary">
+<span class="material-symbols-outlined text-[32px]">call</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm uppercase tracking-widest text-outline mb-1">Call Our Office</p>
+<p class="text-headline-md font-headline-md text-primary">+62 (21) 5000 8888</p>
+<p class="text-body-md font-body-md text-on-surface-variant">Mon - Fri, 9:00 AM to 6:00 PM (GMT+7)</p>
+</div>
+</div>
+<div class="flex items-start gap-md group">
+<div class="bg-surface-container-high p-4 rounded-xl text-secondary">
+<span class="material-symbols-outlined text-[32px]">location_on</span>
+</div>
+<div>
+<p class="text-label-sm font-label-sm uppercase tracking-widest text-outline mb-1">Headquarters</p>
+<p class="text-headline-md font-headline-md text-primary">Aksara Tech Tower, Fl 42</p>
+<p class="text-body-md font-body-md text-on-surface-variant">Jl. Jend. Sudirman Kav. 52-53, Jakarta Selatan, 12190, Indonesia</p>
+</div>
+</div>
+</div>
+</div>
+<div class="mt-xl p-lg rounded-xl border border-outline-variant bg-surface-container-low">
+<p class="text-headline-md font-headline-md text-primary mb-md">Global Presence</p>
+<div class="flex gap-lg">
+<div class="text-center">
+<p class="text-headline-md font-bold text-secondary">12+</p>
+<p class="text-label-sm font-label-sm text-outline">COUNTRIES</p>
+</div>
+<div class="w-px h-12 bg-outline-variant"></div>
+<div class="text-center">
+<p class="text-headline-md font-bold text-secondary">5</p>
+<p class="text-label-sm font-label-sm text-outline">REGIONAL HUBS</p>
+</div>
+<div class="w-px h-12 bg-outline-variant"></div>
+<div class="text-center">
+<p class="text-headline-md font-bold text-secondary">24/7</p>
+<p class="text-label-sm font-label-sm text-outline">SUPPORT</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Right Column: Form -->
+<div class="lg:col-span-7">
+<div class="glass-card p-lg rounded-xl shadow-lg border border-outline-variant">
+<form class="space-y-md">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-md">
+<div class="space-y-xs">
+<label class="text-label-md font-label-md text-primary ml-1">Full Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md" placeholder="John Doe" type="text"/>
+</div>
+<div class="space-y-xs">
+<label class="text-label-md font-label-md text-primary ml-1">Work Email</label>
+<input class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md" placeholder="john@company.com" type="email"/>
+</div>
+</div>
+<div class="space-y-xs">
+<label class="text-label-md font-label-md text-primary ml-1">Subject</label>
+<select class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md appearance-none">
+<option>Strategic Partnership</option>
+<option>Service Inquiry</option>
+<option>Technical Support</option>
+<option>Career Opportunities</option>
+<option>Other</option>
+</select>
+</div>
+<div class="space-y-xs">
+<label class="text-label-md font-label-md text-primary ml-1">Message</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-outline-variant bg-surface input-focus-glow text-body-md resize-none" placeholder="Tell us about your project or inquiry..." rows="6"></textarea>
+</div>
+<div class="flex items-center gap-sm pt-2">
+<input class="rounded border-outline-variant text-secondary focus:ring-secondary" id="consent" type="checkbox"/>
+<label class="text-label-md font-label-md text-on-surface-variant" for="consent">I agree to the <a class="text-secondary underline" href="#">Privacy Policy</a> and data processing terms.</label>
+</div>
+<button class="w-full bg-primary text-on-primary py-4 rounded-lg text-headline-md font-headline-md hover:bg-secondary transition-all transform hover:-translate-y-1 shadow-md" type="submit">
+                                Send Inquiry
+                            </button>
+</form>
+</div>
+</div>
+</div>
+</section>
+<!-- Map Section -->
+<section class="w-full px-margin-desktop pb-xl">
+<div class="rounded-xl overflow-hidden shadow-lg border border-outline-variant h-[500px] relative group">
+<div class="w-full h-full bg-surface-variant flex items-center justify-center relative overflow-hidden" data-location="Jakarta, Indonesia" style="">
+<img class="w-full h-full object-cover" data-alt="A clean, high-resolution satellite map view of Jakarta's central business district featuring modern glass skyscrapers, lush green urban parks, and systematic city grids. The visual style is professional and corporate with a cool blue and silver color palette to match the PT. Hitech Aksara Digital brand identity. The lighting is bright mid-day sun casting crisp geometric shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC76Y2Gp0k1R8VwstJQxc1aUo6k0XOqaKNKSTcTYPDFz9czdscNP0Ms03_rQ4Dmi2gjIYZgFA374JcsUhO2tnMAd-2tO0SLaX1dmmVQRVxb5932JnCVwfCDWHRP5srDg_zn6N2RYPyPmdXkDsDcPVBcrl5ESQakv0HPehvzwfSgyvl7Bb0FkL4-Gj_ci1KaQWwjh9OseBR1HK6EhgERc-NaCReaR_nSkaIfQGqOiC_Gv3ivh1XuipnFqQ"/>
+<div class="absolute inset-0 bg-primary/10 group-hover:bg-transparent transition-colors duration-500"></div>
+<!-- Map Pin Overlay -->
+<div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 flex flex-col items-center">
+<div class="bg-primary text-on-primary px-4 py-2 rounded-lg text-label-md font-label-md shadow-xl mb-2 whitespace-nowrap animate-bounce">
+                            Aksara Tech Tower
+                        </div>
+<span class="material-symbols-outlined text-primary text-[48px]" style="font-variation-settings: 'FILL' 1;">location_on</span>
+</div>
+</div>
+<!-- Floating Map Controls -->
+<div class="absolute bottom-md right-md flex flex-col gap-sm">
+<button class="bg-surface w-12 h-12 rounded-lg shadow-md flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">add</span>
+</button>
+<button class="bg-surface w-12 h-12 rounded-lg shadow-md flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">remove</span>
+</button>
+<button class="bg-surface w-12 h-12 rounded-lg shadow-md flex items-center justify-center hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined">my_location</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer (Shared Component) -->
+<footer class="w-full px-margin-desktop py-xl flex flex-col md:flex-row justify-between items-center gap-md bg-primary dark:bg-on-background text-on-primary dark:text-primary-fixed">
+<div class="flex flex-col items-center md:items-start gap-xs">
+<div class="text-headline-md font-headline-md text-on-primary">PT. Hitech Aksara Digital</div>
+<p class="text-body-md font-body-md text-on-primary-container dark:text-outline-variant">© 2024 PT. Hitech Aksara Digital. All Rights Reserved.</p>
+</div>
+<div class="flex flex-wrap justify-center gap-lg">
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Privacy Policy</a>
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Terms of Service</a>
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">FAQ</a>
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Cookie Settings</a>
+</div>
+<div class="flex gap-md">
+<button class="text-on-primary hover:text-secondary-container transition-colors">
+<span class="material-symbols-outlined">share</span>
+</button>
+<button class="text-on-primary hover:text-secondary-container transition-colors">
+<span class="material-symbols-outlined">public</span>
+</button>
+</div>
+</footer>
+<script>
+        // Simple form interaction simulation
+        document.querySelector('form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            const btn = this.querySelector('button[type="submit"]');
+            const originalText = btn.innerText;
+            btn.innerText = 'Message Sent Successfully!';
+            btn.classList.replace('bg-primary', 'bg-green-600');
+            btn.disabled = true;
+            
+            setTimeout(() => {
+                btn.innerText = originalText;
+                btn.classList.replace('bg-green-600', 'bg-primary');
+                btn.disabled = false;
+                this.reset();
+            }, 3000);
+        });
+
+        // Sticky Header scroll effect
+        window.addEventListener('scroll', () => {
+            const nav = document.querySelector('nav');
+            if (window.scrollY > 20) {
+                nav.classList.add('shadow-md');
+                nav.classList.remove('shadow-sm');
+            } else {
+                nav.classList.add('shadow-sm');
+                nav.classList.remove('shadow-md');
+            }
+        });
+    </script>
+</body></html>

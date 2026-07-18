@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Services | PT. Hitech Aksara Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#f6bb80",
+                    "tertiary-container": "#553001",
+                    "on-secondary-fixed": "#001e2f",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#8bceff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0b3c5d",
+                    "surface-container": "#e2efff",
+                    "on-background": "#0f1d29",
+                    "outline": "#72777e",
+                    "on-surface-variant": "#42474e",
+                    "surface-variant": "#d6e4f5",
+                    "primary-fixed": "#cee5ff",
+                    "surface-tint": "#396285",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#371d00",
+                    "on-secondary-container": "#005278",
+                    "surface-bright": "#f7f9ff",
+                    "surface-dim": "#cddced",
+                    "primary": "#00263f",
+                    "inverse-primary": "#a3cbf2",
+                    "on-tertiary-fixed-variant": "#663e0e",
+                    "secondary": "#006492",
+                    "surface-container-highest": "#d6e4f5",
+                    "on-tertiary-container": "#ce9760",
+                    "background": "#f7f9ff",
+                    "inverse-surface": "#24323f",
+                    "on-primary-fixed-variant": "#1f4a6c",
+                    "on-primary-container": "#7fa7cd",
+                    "outline-variant": "#c2c7ce",
+                    "surface-container-low": "#edf4ff",
+                    "on-tertiary-fixed": "#2c1600",
+                    "on-primary-fixed": "#001d32",
+                    "on-secondary-fixed-variant": "#004b6f",
+                    "secondary-container": "#75c6ff",
+                    "primary-fixed-dim": "#a3cbf2",
+                    "secondary-fixed": "#c9e6ff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdcbd",
+                    "on-surface": "#0f1d29",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#e8f2ff",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f7f9ff",
+                    "surface-container-high": "#dbeafb",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "xl": "80px",
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body { font-family: 'Inter', sans-serif; background-color: #f7f9ff; color: #0f1d29; }
+        .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+        .glass-card { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(12px); border: 1px solid rgba(226, 232, 240, 0.8); }
+        .tech-gradient { background: linear-gradient(135deg, #0b3c5d 0%, #00263f 100%); }
+        .hero-pattern { background-image: radial-gradient(#0b3c5d 0.5px, transparent 0.5px); background-size: 24px 24px; }
+    </style>
+</head>
+<body class="bg-surface">
+<!-- TopAppBar from JSON Authority -->
+<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-desktop py-4 bg-surface dark:bg-primary border-b border-outline-variant dark:border-primary-container shadow-sm dark:shadow-none">
+<div class="flex items-center gap-md">
+<span class="text-headline-md font-headline-md font-bold text-primary dark:text-secondary-fixed">PT. Hitech Aksara Digital</span>
+</div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant dark:text-surface-variant font-medium text-label-md font-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Home</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium text-label-md font-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">About Us</a>
+<a class="text-secondary dark:text-secondary-container font-bold border-b-2 border-secondary pb-1 text-label-md font-label-md" href="#">Services</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium text-label-md font-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Portfolio</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium text-label-md font-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Contact Us</a>
+<a class="text-on-surface-variant dark:text-surface-variant font-medium text-label-md font-label-md hover:text-secondary dark:hover:text-secondary-fixed transition-colors duration-200" href="#">Blog</a>
+</div>
+<div class="flex items-center gap-sm">
+<span class="text-label-md font-label-md text-on-surface-variant cursor-pointer hover:text-primary">EN/ID</span>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-lg font-label-md text-label-md hover:bg-secondary transition-colors shadow-sm">Careers</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section -->
+<section class="relative overflow-hidden pt-xl pb-lg px-margin-desktop hero-pattern">
+<div class="max-w-4xl">
+<h1 class="text-headline-xl font-headline-xl text-primary mb-md">Empowering Innovation Through Precise Digital Solutions.</h1>
+<p class="text-body-lg font-body-lg text-on-surface-variant max-w-2xl">We bridge the gap between complex institutional needs and cutting-edge technology. Our specialized services are designed to scale your digital presence with authority and precision.</p>
+</div>
+<!-- Atmospheric Shader -->
+<div class="absolute right-0 top-0 w-1/3 h-full opacity-10 pointer-events-none">
+
+</div>
+</section>
+<!-- Services Grid (Bento Style) -->
+<section class="px-margin-desktop py-xl bg-surface-container-low">
+<div class="flex flex-col gap-sm mb-lg">
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-secondary">Expertise</span>
+<h2 class="text-headline-lg font-headline-lg text-primary">Core Service Offerings</h2>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Software Development -->
+<div class="md:col-span-8 group relative overflow-hidden glass-card rounded-xl p-lg flex flex-col justify-between min-h-[400px] hover:shadow-lg transition-all duration-300">
+<div class="relative z-10">
+<div class="w-12 h-12 rounded-lg bg-primary-container flex items-center justify-center text-on-primary-container mb-md">
+<span class="material-symbols-outlined text-headline-md">terminal</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-sm">Software Development</h3>
+<p class="text-body-md font-body-md text-on-surface-variant max-w-md">Custom enterprise applications built with architectural integrity. We focus on scalable, secure, and maintainable codebases that serve as the backbone of your business operations.</p>
+</div>
+<div class="flex items-center gap-sm mt-md text-secondary font-semibold cursor-pointer group-hover:gap-md transition-all">
+<span>Explore Capabilities</span>
+<span class="material-symbols-outlined">arrow_forward</span>
+</div>
+<div class="absolute -right-12 -bottom-12 w-64 h-64 opacity-5 group-hover:scale-110 transition-transform duration-500">
+<img class="object-contain w-full h-full" data-alt="A clean high-tech UI representation of code syntax highlighting with glowing blue neon lines on a deep navy background, reflecting professional software engineering standards." src="https://lh3.googleusercontent.com/aida-public/AB6AXuB3yGfaztNm_wsql5fadW2tkKRH0Jfdd_n3d9YYEW1lm32N3pzA_nqryN1MmF9Am6LxeGDmb21Gn0b-w2IcEVwnG5tGWywLxlTuqCQOHLBz4DkeSnR6naosjxWBpPMGxQRwbZpAVGd978BhAX9YSkq7KWvoNLu9L6z19y4lV9Ga37JzL0i2qCST4MOIT80Fpo0E4C2wvRQkx_qKfFAyZ6-m8eI4HqnAEolxt7oAiFwSVV2j4NhpRqRKSw"/>
+</div>
+</div>
+<!-- Digital Transformation -->
+<div class="md:col-span-4 group glass-card rounded-xl p-lg flex flex-col min-h-[400px] hover:shadow-lg transition-all duration-300">
+<div class="w-12 h-12 rounded-lg bg-secondary-container flex items-center justify-center text-on-secondary-container mb-md">
+<span class="material-symbols-outlined text-headline-md">auto_awesome</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-primary mb-sm">Digital Transformation</h3>
+<p class="text-body-md font-body-md text-on-surface-variant">Modernizing legacy systems to meet modern digital demands. We rethink workflows and implement agile technologies to increase institutional efficiency.</p>
+<div class="mt-auto pt-md border-t border-outline-variant">
+<ul class="space-y-base text-label-md font-label-md text-primary">
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px]">check_circle</span> Legacy Migration</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px]">check_circle</span> Cloud Integration</li>
+<li class="flex items-center gap-xs"><span class="material-symbols-outlined text-[16px]">check_circle</span> UX Modernization</li>
+</ul>
+</div>
+</div>
+<!-- Data Governance -->
+<div class="md:col-span-12 group tech-gradient rounded-xl p-lg flex flex-col md:flex-row items-center justify-between gap-lg hover:shadow-xl transition-all duration-300 overflow-hidden relative">
+<div class="max-w-xl relative z-10">
+<div class="w-12 h-12 rounded-lg bg-white/10 flex items-center justify-center text-secondary-fixed mb-md">
+<span class="material-symbols-outlined text-headline-md">shield_lock</span>
+</div>
+<h3 class="text-headline-md font-headline-md text-white mb-sm">Data Governance &amp; Security</h3>
+<p class="text-body-md font-body-md text-secondary-fixed opacity-90">Establishing systematic precision in data management. We ensure your most valuable assets are compliant, secure, and ready for advanced analytics while maintaining strict privacy standards.</p>
+<button class="mt-md px-6 py-3 bg-secondary text-white rounded-lg font-label-md text-label-md hover:bg-white hover:text-primary transition-all">Secure Your Data</button>
+</div>
+<div class="w-full md:w-1/3 aspect-video rounded-lg overflow-hidden border border-white/10 bg-black/20">
+<img class="w-full h-full object-cover" data-alt="A conceptual 3D visualization of a data security vault with digital floating particles and blue crystalline structures, representing institutional stability and cyber protection in a sleek corporate modern style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0gRg3NrIUSyJ6LwVU4nouoW6gcj30W354IcB0xWsoX-n06hM0JvV3wVsy9eX2cHrvsDRRjwaV11qzhO14ROIeCWwKVekv4vB66bdllMHDU8OEtwb9GabBD7y2B6FqlaZe2Zf9goEl-piyaGNk2-DTvnYij5DvxSOzAeJazZqhhqXnQgPCA6C3-0hmh1DfRHriQ01fChJpzbKis5NF-feSdiAi0KVmDJ8vPqLXZzRZfROEl9CDsbTjaA"/>
+</div>
+<!-- Background texture -->
+<div class="absolute inset-0 opacity-10 pointer-events-none">
+
+</div>
+</div>
+</div>
+</section>
+<!-- Methodology / Tech Stack Section -->
+<section class="px-margin-desktop py-xl bg-surface">
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-xl items-center">
+<div>
+<span class="text-label-sm font-label-sm uppercase tracking-widest text-secondary mb-xs block">Our Methodology</span>
+<h2 class="text-headline-lg font-headline-lg text-primary mb-md">Systematic Precision from Concept to Deployment.</h2>
+<div class="space-y-lg mt-lg">
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center font-bold text-primary">01</div>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary text-[18px]">Deep Analysis</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mt-xs">We begin with a rigorous audit of existing structures to identify bottlenecks and opportunities for high-impact innovation.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center font-bold text-primary">02</div>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary text-[18px]">Systematic Architecture</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mt-xs">Designing robust frameworks using modern stacks (Node.js, React, Python, Cloud-Native) tailored for high performance.</p>
+</div>
+</div>
+<div class="flex gap-md">
+<div class="flex-shrink-0 w-10 h-10 rounded-full border-2 border-primary flex items-center justify-center font-bold text-primary">03</div>
+<div>
+<h4 class="text-headline-md font-headline-md text-primary text-[18px]">Rigorous Deployment</h4>
+<p class="text-body-md font-body-md text-on-surface-variant mt-xs">Continuous integration and meticulous testing protocols ensure that every release maintains the highest standards of stability.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="relative">
+<div class="absolute -inset-4 bg-primary/5 rounded-full blur-3xl"></div>
+<div class="relative glass-card p-md rounded-xl shadow-2xl border-outline-variant/30">
+<div class="grid grid-cols-2 gap-md">
+<div class="p-sm bg-white rounded-lg border border-outline-variant/20 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-headline-md mb-xs">cloud</span>
+<span class="text-label-md font-label-md text-primary">Cloud Native</span>
+</div>
+<div class="p-sm bg-white rounded-lg border border-outline-variant/20 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-headline-md mb-xs">security</span>
+<span class="text-label-md font-label-md text-primary">Zero Trust</span>
+</div>
+<div class="p-sm bg-white rounded-lg border border-outline-variant/20 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-headline-md mb-xs">rocket_launch</span>
+<span class="text-label-md font-label-md text-primary">High Scale</span>
+</div>
+<div class="p-sm bg-white rounded-lg border border-outline-variant/20 flex flex-col items-center">
+<span class="material-symbols-outlined text-secondary text-headline-md mb-xs">query_stats</span>
+<span class="text-label-md font-label-md text-primary">Data Driven</span>
+</div>
+</div>
+<div class="mt-md h-48 rounded-lg overflow-hidden">
+<img class="w-full h-full object-cover" data-alt="A macro photograph of high-end circuit board patterns with flowing electric light traces in shades of corporate blue and soft white. The image exudes professional tech-forward innovation and precision engineering." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDQPaA2WdYrn-pqCP8dywJr2qd0LLRBj_B7Vb8YoXSLxupYq20C-HjWC2nrsjIdAf_2HEMW-OhaTqb_5rIu-BMnLRbw1gs1UQO12H0BjAp1TE2CRleeqHAHWdtARfFU3O357K_7_mOWrvcC1aQI0dm5xHlAsjF5M0U9tjMdNr0iW-1fRORqQLDE2kbPWKNg5GKUzZXrClsRHI8Eg8PgsJMdGCQVRifLYqL7ojgR6B0QCVco8DK5eKZGUw"/>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="px-margin-desktop py-xl">
+<div class="bg-primary-container rounded-2xl p-lg md:p-xl text-center relative overflow-hidden">
+<div class="relative z-10 max-w-2xl mx-auto">
+<h2 class="text-headline-lg font-headline-lg text-white mb-md">Ready to Transform Your Digital Infrastructure?</h2>
+<p class="text-body-md font-body-md text-on-primary-container mb-lg">Consult with our expert architects to design a solution that matches your institutional ambitions.</p>
+<div class="flex flex-col sm:flex-row gap-md justify-center">
+<button class="bg-secondary text-white px-lg py-3 rounded-lg font-headline-md text-label-md hover:scale-105 transition-transform shadow-lg">Schedule a Consultation</button>
+<button class="border border-on-primary-container text-on-primary-container px-lg py-3 rounded-lg font-headline-md text-label-md hover:bg-white/10 transition-colors">View Our Portfolio</button>
+</div>
+</div>
+<!-- Subtle graphic element -->
+<div class="absolute -left-10 -bottom-10 w-48 h-48 bg-secondary/20 rounded-full blur-3xl"></div>
+<div class="absolute -right-10 -top-10 w-64 h-64 bg-secondary/10 rounded-full blur-3xl"></div>
+</div>
+</section>
+</main>
+<!-- Footer from JSON Authority -->
+<footer class="w-full px-margin-desktop py-xl flex flex-col md:flex-row justify-between items-center gap-md bg-primary dark:bg-on-background">
+<div class="flex flex-col items-center md:items-start gap-xs">
+<span class="text-headline-md font-headline-md text-on-primary">PT. Hitech Aksara Digital</span>
+<span class="text-body-md font-body-md text-on-primary-container dark:text-outline-variant">© 2024 PT. Hitech Aksara Digital. All Rights Reserved.</span>
+</div>
+<div class="flex gap-md flex-wrap justify-center">
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Privacy Policy</a>
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Terms of Service</a>
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">FAQ</a>
+<a class="text-label-sm font-label-sm text-on-primary-container dark:text-outline-variant hover:text-secondary-container transition-colors" href="#">Cookie Settings</a>
+</div>
+</footer>
+<script>
+        // Micro-interaction for cards
+        document.querySelectorAll('.glass-card').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+                card.style.setProperty('--mouse-x', `${x}px`);
+                card.style.setProperty('--mouse-y', `${y}px`);
+            });
+        });
+    </script>
+</body></html>

@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>About Us | PT. Hitech Aksara Digital</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "tertiary-fixed-dim": "#f6bb80",
+                    "tertiary-container": "#553001",
+                    "on-secondary-fixed": "#001e2f",
+                    "error": "#ba1a1a",
+                    "secondary-fixed-dim": "#8bceff",
+                    "surface-container-lowest": "#ffffff",
+                    "primary-container": "#0b3c5d",
+                    "surface-container": "#e2efff",
+                    "on-background": "#0f1d29",
+                    "outline": "#72777e",
+                    "on-surface-variant": "#42474e",
+                    "surface-variant": "#d6e4f5",
+                    "primary-fixed": "#cee5ff",
+                    "surface-tint": "#396285",
+                    "error-container": "#ffdad6",
+                    "tertiary": "#371d00",
+                    "on-secondary-container": "#005278",
+                    "surface-bright": "#f7f9ff",
+                    "surface-dim": "#cddced",
+                    "primary": "#00263f",
+                    "inverse-primary": "#a3cbf2",
+                    "on-tertiary-fixed-variant": "#663e0e",
+                    "secondary": "#006492",
+                    "surface-container-highest": "#d6e4f5",
+                    "on-tertiary-container": "#ce9760",
+                    "background": "#f7f9ff",
+                    "inverse-surface": "#24323f",
+                    "on-primary-fixed-variant": "#1f4a6c",
+                    "on-primary-container": "#7fa7cd",
+                    "outline-variant": "#c2c7ce",
+                    "surface-container-low": "#edf4ff",
+                    "on-tertiary-fixed": "#2c1600",
+                    "on-primary-fixed": "#001d32",
+                    "on-secondary-fixed-variant": "#004b6f",
+                    "secondary-container": "#75c6ff",
+                    "primary-fixed-dim": "#a3cbf2",
+                    "secondary-fixed": "#c9e6ff",
+                    "on-secondary": "#ffffff",
+                    "tertiary-fixed": "#ffdcbd",
+                    "on-surface": "#0f1d29",
+                    "on-error": "#ffffff",
+                    "inverse-on-surface": "#e8f2ff",
+                    "on-primary": "#ffffff",
+                    "on-tertiary": "#ffffff",
+                    "surface": "#f7f9ff",
+                    "surface-container-high": "#dbeafb",
+                    "on-error-container": "#93000a"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "md": "24px",
+                    "xs": "4px",
+                    "gutter": "24px",
+                    "sm": "12px",
+                    "base": "8px",
+                    "xl": "80px",
+                    "margin-mobile": "16px",
+                    "lg": "48px",
+                    "margin-desktop": "64px"
+            },
+            "fontFamily": {
+                    "headline-lg": ["Inter"],
+                    "body-lg": ["Inter"],
+                    "headline-md": ["Inter"],
+                    "label-sm": ["Inter"],
+                    "body-md": ["Inter"],
+                    "headline-lg-mobile": ["Inter"],
+                    "headline-xl": ["Inter"],
+                    "label-md": ["Inter"]
+            },
+            "fontSize": {
+                    "headline-lg": ["32px", {"lineHeight": "40px", "letterSpacing": "-0.01em", "fontWeight": "700"}],
+                    "body-lg": ["18px", {"lineHeight": "28px", "fontWeight": "400"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "label-sm": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "600"}],
+                    "body-md": ["16px", {"lineHeight": "24px", "fontWeight": "400"}],
+                    "headline-lg-mobile": ["28px", {"lineHeight": "36px", "fontWeight": "700"}],
+                    "headline-xl": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-md": ["14px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "500"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+            display: inline-block;
+            vertical-align: middle;
+        }
+        .tonal-elevation-2 {
+            box-shadow: 0px 4px 12px rgba(11, 60, 93, 0.08);
+        }
+        .backdrop-blur-modern {
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+    </style>
+</head>
+<body class="bg-surface text-on-surface font-body-md overflow-x-hidden">
+<!-- TopNavBar -->
+<nav class="sticky top-0 z-50 flex justify-between items-center w-full px-margin-mobile md:px-margin-desktop py-4 bg-surface dark:bg-primary border-b border-outline-variant dark:border-primary-container shadow-sm">
+<div class="text-headline-md font-headline-md font-bold text-primary dark:text-secondary-fixed">
+            PT. Hitech Aksara Digital
+        </div>
+<div class="hidden md:flex items-center gap-lg">
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Home</a>
+<a class="text-secondary dark:text-secondary-container font-bold border-b-2 border-secondary pb-1 text-label-md font-label-md" href="#">About Us</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Services</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Portfolio</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Blog</a>
+<a class="text-on-surface-variant font-medium hover:text-secondary transition-colors duration-200 text-label-md font-label-md" href="#">Contact Us</a>
+</div>
+<div class="flex items-center gap-md">
+<button class="hidden lg:block bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md hover:bg-secondary transition-colors duration-200">Careers</button>
+<span class="text-label-md font-label-md font-semibold text-primary cursor-pointer">EN/ID</span>
+<button class="md:hidden text-primary">
+<span class="material-symbols-outlined">menu</span>
+</button>
+</div>
+</nav>
+<main>
+<!-- Hero Section with Animation -->
+<section class="relative h-[60vh] min-h-[500px] flex items-center justify-center overflow-hidden bg-primary">
+
+<div class="relative z-10 text-center px-margin-mobile">
+<h1 class="text-headline-xl font-headline-xl text-on-primary mb-md max-w-4xl mx-auto">
+                    Architecting the Future of Digital Infrastructure
+                </h1>
+<p class="text-body-lg font-body-lg text-on-primary-container max-w-2xl mx-auto opacity-90">
+                    We combine Indonesian technological heritage with global innovation to deliver high-performance digital solutions.
+                </p>
+</div>
+</section>
+<!-- Company History Section -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-bright">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row gap-lg items-center">
+<div class="w-full md:w-1/2">
+<div class="bg-surface-container rounded-xl p-base tonal-elevation-2 relative overflow-hidden h-[400px]">
+<div class="absolute inset-0 bg-cover bg-center" data-alt="A sophisticated black and white cinematic photograph of a modern high-tech office building at dusk, featuring clean glass architecture and warm interior lighting. The scene captures the essence of corporate stability and technological growth, with long exposure light trails from passing vehicles nearby, emphasizing a fast-paced digital era. The overall aesthetic is professional, minimalist, and authoritative." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCXUdIXDpGza55HC_AoWx5Lt8wFaoqyYQRBQ0wml_02YGM_pzzbrXk3bPgxcNA0FvPdtYdmvutUlYGzCgt4PZcm81zL4pRJg0OP0hAiKqjbSM1vWpDjOWp6noq7HaYoJ7a2QoGT-InWAObc76az-FqmlkVGFURcDdCkHkxWF3MfAfqDUm0bFlFc3E08rccwC_iYF6qrMPTswppieoYQNgdcnG3YYKqtvsUVfJGqQkOM3XrWC-Lic-x9Ig')"></div>
+</div>
+</div>
+<div class="w-full md:w-1/2 space-y-md">
+<div class="inline-block px-4 py-1 bg-secondary-container text-on-secondary-container rounded-full text-label-sm font-label-sm uppercase tracking-wider">
+                        Our Legacy
+                    </div>
+<h2 class="text-headline-lg font-headline-lg text-primary">Company History</h2>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                        Founded in the heart of Jakarta, PT. Hitech Aksara Digital emerged from a vision to bridge the gap between traditional enterprise operations and the burgeoning digital landscape. Since our inception, we have evolved from a niche consultancy into a full-scale technology powerhouse.
+                    </p>
+<p class="text-body-md font-body-md text-on-surface-variant leading-relaxed">
+                        Through a decade of rigorous engineering and strategic partnerships, we've successfully deployed over 500+ infrastructure projects, consistently setting the benchmark for digital reliability in the region. Our journey is marked by a relentless pursuit of excellence and a commitment to empowering local industries with world-class tech.
+                    </p>
+<div class="flex gap-lg pt-md">
+<div>
+<div class="text-headline-md font-headline-md text-secondary">2014</div>
+<div class="text-label-sm font-label-sm text-outline">Established</div>
+</div>
+<div>
+<div class="text-headline-md font-headline-md text-secondary">500+</div>
+<div class="text-label-sm font-label-sm text-outline">Projects Done</div>
+</div>
+<div>
+<div class="text-headline-md font-headline-md text-secondary">150+</div>
+<div class="text-label-sm font-label-sm text-outline">Experts</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Vision & Mission Section (Bento Grid) -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-md">
+<div class="md:col-span-1 bg-primary text-on-primary p-lg rounded-xl flex flex-col justify-between">
+<div>
+<span class="material-symbols-outlined text-headline-xl mb-md" style="font-variation-settings: 'FILL' 1;">visibility</span>
+<h3 class="text-headline-md font-headline-md mb-sm">Our Vision</h3>
+</div>
+<p class="text-body-md font-body-md opacity-80">
+                        To become the preeminent catalyst for digital transformation in Southeast Asia, redefining how institutions interact with data and infrastructure.
+                    </p>
+</div>
+<div class="md:col-span-2 bg-surface-container-high border border-outline-variant p-lg rounded-xl relative overflow-hidden">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-headline-xl text-primary mb-md" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<h3 class="text-headline-md font-headline-md text-primary mb-sm">Our Mission</h3>
+<ul class="space-y-sm">
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span class="text-body-md font-body-md text-on-surface-variant">Deliver scalable, high-security digital infrastructure tailored to complex institutional needs.</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span class="text-body-md font-body-md text-on-surface-variant">Foster a culture of continuous learning and technological mastery among Indonesian talent.</span>
+</li>
+<li class="flex items-start gap-sm">
+<span class="material-symbols-outlined text-secondary mt-1">check_circle</span>
+<span class="text-body-md font-body-md text-on-surface-variant">Integrate sustainable and efficient cloud solutions that minimize environmental footprint.</span>
+</li>
+</ul>
+</div>
+<div class="absolute bottom-[-20px] right-[-20px] opacity-5">
+<span class="material-symbols-outlined text-[200px]">hub</span>
+</div>
+</div>
+</div>
+</section>
+<!-- Corporate Values -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface-bright">
+<div class="max-w-7xl mx-auto text-center mb-lg">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-sm">Corporate Values</h2>
+<div class="w-24 h-1 bg-secondary mx-auto rounded-full"></div>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-md">
+<!-- Value 1 -->
+<div class="bg-white p-lg rounded-xl border border-outline-variant hover:border-secondary transition-all group duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[32px]">lightbulb</span>
+</div>
+<h4 class="text-headline-md font-headline-md text-primary mb-sm">Innovation</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        We thrive on curiosity. Our teams are empowered to experiment with nascent technologies to solve age-old problems in radical new ways.
+                    </p>
+</div>
+<!-- Value 2 -->
+<div class="bg-white p-lg rounded-xl border border-outline-variant hover:border-secondary transition-all group duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[32px]">verified_user</span>
+</div>
+<h4 class="text-headline-md font-headline-md text-primary mb-sm">Integrity</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        The foundation of our institutional stability. We operate with radical transparency, ensuring our clients' data and trust are never compromised.
+                    </p>
+</div>
+<!-- Value 3 -->
+<div class="bg-white p-lg rounded-xl border border-outline-variant hover:border-secondary transition-all group duration-300">
+<div class="w-16 h-16 bg-surface-container rounded-lg flex items-center justify-center mb-md group-hover:bg-secondary-container transition-colors">
+<span class="material-symbols-outlined text-primary text-[32px]">workspace_premium</span>
+</div>
+<h4 class="text-headline-md font-headline-md text-primary mb-sm">Excellence</h4>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        Precision is our standard. From code quality to infrastructure maintenance, we deliver nothing short of industrial-grade excellence.
+                    </p>
+</div>
+</div>
+</section>
+<!-- Board of Directors -->
+<section class="py-xl px-margin-mobile md:px-margin-desktop bg-surface">
+<div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-end mb-lg gap-md">
+<div class="max-w-2xl">
+<h2 class="text-headline-lg font-headline-lg text-primary mb-sm">Board of Directors</h2>
+<p class="text-body-md font-body-md text-on-surface-variant">
+                        Our leadership team comprises seasoned industry veterans and innovative thinkers dedicated to steering the firm towards sustainable growth.
+                    </p>
+</div>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-md hover:bg-secondary transition-all flex items-center gap-sm">
+                    View Full Leadership <span class="material-symbols-outlined">arrow_forward</span>
+</button>
+</div>
+<div class="max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-md">
+<!-- Director 1 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant tonal-elevation-2">
+<div class="h-80 bg-surface-variant relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional studio portrait of a confident middle-aged male executive with a warm but authoritative smile. He is wearing a tailored charcoal suit and a crisp white shirt, set against a soft, out-of-focus modern office background. The lighting is high-end corporate style, with soft shadows and sharp clarity, embodying the 'Corporate Modern' aesthetic of the brand." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuBqaO-a9nC4cUwIEVkz7T3l7fufWKU3fjx8inLoZOxKBvLy3qnrqqD1wwVtj8g9L-wTe6Q_H2Ro2AYyFgDqcE6nvUjgm401_cj8hH_OpTzc3XuQ-TCxAEvQWX2CVJkWCk-8R1-tcYJkt_VT1p3T6MJbftBzxcJgm5OENkzhFYVkc6UnBqgpmuVob7oNgrRDd_UmYh1_2N4vg4ef0r8rKsqqAPWAlDDYkulBpOYILFZmY66wNpxjy12upA')"></div>
+</div>
+<div class="p-md">
+<h5 class="text-headline-md font-headline-md text-primary mb-xs">Bambang Wijaya</h5>
+<p class="text-label-md font-label-md text-secondary uppercase tracking-wider mb-sm">Chief Executive Officer</p>
+<div class="flex gap-sm">
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
+</div>
+</div>
+</div>
+<!-- Director 2 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant tonal-elevation-2">
+<div class="h-80 bg-surface-variant relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional studio portrait of an elegant female executive with short styled hair, wearing a navy blue blazer and minimalist jewelry. She has a focused and intelligent expression, looking slightly off-camera. The lighting is bright and clean, with a neutral studio background that fits a high-tech corporate profile. The visual tone is sophisticated, trustworthy, and precise." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuC-FRM84lIPbJvPYJrL_oTXcYd0uWMRwYCAyzsYzNOKks0gocA-5vMYeP4kbPPszf8ziBpfA0t3-aV234fF5YMFf0y_DMwWQFUZ4vzRREg5jvNHYdIGIdLn4_346HNxnznv0qVgOGOrBNKi4IkntAU_j1vW_yHGWC6E5VS9ZfOM4UvNqn8Us_zsDnKAV3w-j5OSZiiZLpQTDHntcLfbOlj_fPASTcegVYEfRRGeawYycn7mqAlsGS9SHQ')"></div>
+</div>
+<div class="p-md">
+<h5 class="text-headline-md font-headline-md text-primary mb-xs">Siti Nurhaliza</h5>
+<p class="text-label-md font-label-md text-secondary uppercase tracking-wider mb-sm">Chief Technology Officer</p>
+<div class="flex gap-sm">
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
+</div>
+</div>
+</div>
+<!-- Director 3 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant tonal-elevation-2">
+<div class="h-80 bg-surface-variant relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="Professional corporate headshot of a young male executive in his 30s, wearing a modern blue suit and no tie, representing a tech-forward leadership style. He has a friendly, approachable demeanor with a professional smile. The background features a subtle bokeh effect of a glass-walled office space with indoor plants, conveying a balanced and modern work environment." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCAWhs4co-d8RJGhzTbIAFM8shHSR13de57sQ-pbfbwEnRFT16qHsyDrCYWjGU2W7hEd7DvrjrclaM7ziCdPpb8pD-5jpt2B6spWC1MQrSKLJm1Zguhn0gTqQyZakMz-mRvPAAeLYzHXeiYbxlugaNMg1Uk-dHULA3QKn1hr7nZQgZ_1OFCvrulWMFAi_ZleXkNljGMq2V-YuUL_38Kkoyk4QWFdN8PchmWc_KsW4EfJxzZeNirLpX7Hw')"></div>
+</div>
+<div class="p-md">
+<h5 class="text-headline-md font-headline-md text-primary mb-xs">Reza Pratama</h5>
+<p class="text-label-md font-label-md text-secondary uppercase tracking-wider mb-sm">Director of Operations</p>
+<div class="flex gap-sm">
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
+</div>
+</div>
+</div>
+<!-- Director 4 -->
+<div class="group bg-white rounded-xl overflow-hidden border border-outline-variant tonal-elevation-2">
+<div class="h-80 bg-surface-variant relative overflow-hidden">
+<div class="absolute inset-0 bg-cover bg-center grayscale group-hover:grayscale-0 transition-all duration-500" data-alt="A professional studio portrait of a mature female leader with glasses, wearing a tailored black suit. She exudes wisdom and stability, with a soft smile. The lighting is warm and directional, highlighting textures and features with a premium aesthetic. The background is a solid deep blue, matching the brand's primary color palette for a cohesive look." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAC0dfy4oaIb_cIurEo_sz8wYdbPW2rVPX8OSybS5biY4MDiG3xMmtMFjIdTQUZVVNxB_UYg_xCe_h36cr982mmZbLDsxjIbqYxYoMA7LCf9qzmIf4J7JIEK2CAY_tfnf-gT-b8jMHMz6VMT0YP-XSUTE_MX-6_5dnQvIKtL6d36T2rOfm3Y0sL7MOYV-my1TO9ISyDvYgOnJ8Kzqn1ao0rUwRta3DVdHM9rFF8ZCQuxnP9Mgv_CZGIkg')"></div>
+</div>
+<div class="p-md">
+<h5 class="text-headline-md font-headline-md text-primary mb-xs">Dewi Saraswati</h5>
+<p class="text-label-md font-label-md text-secondary uppercase tracking-wider mb-sm">Chief Financial Officer</p>
+<div class="flex gap-sm">
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">alternate_email</span></a>
+<a class="text-outline hover:text-secondary" href="#"><span class="material-symbols-outlined text-[20px]">language</span></a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- CTA Section -->
+<section class="py-xl px-margin-mobile bg-primary relative overflow-hidden">
+<div class="absolute inset-0 opacity-10">
+
+</div>
+<div class="relative z-10 max-w-4xl mx-auto text-center">
+<h2 class="text-headline-lg font-headline-lg text-on-primary mb-md">Ready to build the next generation of digital excellence?</h2>
+<div class="flex flex-col sm:flex-row gap-md justify-center">
+<button class="bg-secondary text-on-secondary px-8 py-4 rounded-lg font-label-md hover:opacity-90 transition-opacity">Get in Touch</button>
+<button class="border border-on-primary text-on-primary px-8 py-4 rounded-lg font-label-md hover:bg-on-primary hover:text-primary transition-all">Download Company Profile</button>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full px-margin-mobile md:px-margin-desktop py-xl flex flex-col md:flex-row justify-between items-center gap-md bg-primary dark:bg-on-background text-on-primary">
+<div class="flex flex-col items-center md:items-start gap-sm">
+<div class="text-headline-md font-headline-md text-on-primary">PT. Hitech Aksara Digital</div>
+<div class="text-body-md font-body-md opacity-60 text-center md:text-left">© 2024 PT. Hitech Aksara Digital. All Rights Reserved.</div>
+</div>
+<div class="flex flex-wrap justify-center gap-md">
+<a class="text-on-primary-container dark:text-outline-variant text-label-sm font-label-sm hover:text-secondary-container transition-colors" href="#">Privacy Policy</a>
+<a class="text-on-primary-container dark:text-outline-variant text-label-sm font-label-sm hover:text-secondary-container transition-colors" href="#">Terms of Service</a>
+<a class="text-on-primary-container dark:text-outline-variant text-label-sm font-label-sm hover:text-secondary-container transition-colors" href="#">FAQ</a>
+<a class="text-on-primary-container dark:text-outline-variant text-label-sm font-label-sm hover:text-secondary-container transition-colors" href="#">Cookie Settings</a>
+</div>
+<div class="flex gap-md">
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-on-primary">share</span>
+</a>
+<a class="w-10 h-10 rounded-full bg-primary-container flex items-center justify-center hover:bg-secondary transition-colors" href="#">
+<span class="material-symbols-outlined text-on-primary">group</span>
+</a>
+</div>
+</footer>
+<script>
+        // Simple intersection observer for reveal animations
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-8');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-8');
+            observer.observe(el);
+        });
+    </script>
+</body></html>
